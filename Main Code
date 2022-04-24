@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a,d,h,m,s;
+    scanf("%d",&a);
+    d = a/86400;
+    h = (a-(d*86400))/3600;
+    m = (a-((d*86400)+(h*3600)))/60;
+    s = a-((d*86400)+(h*3600)+(m*60));
+    printf("The Duration is %d days %d hours %d minutes %d seconds",d,h,m,s);
+    return 0;
+}
